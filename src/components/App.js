@@ -22,7 +22,7 @@ class App extends Component {
             <div className="modal">
               <div className="modal-content">
                 <h3>Modal Content</h3>
-                <p>This is a modal content.</p>
+                <p>This is the modal content.</p>
                 <button onClick={() => this.setState({ showModal: false })}>Close Modal</button>
               </div>
             </div>
