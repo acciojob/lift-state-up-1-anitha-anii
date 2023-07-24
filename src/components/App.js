@@ -15,13 +15,13 @@ class App extends Component {
   
     render() {
       return (
-        <div>
+        <div className='parent'>
           <h1>Parent Component</h1>
           <Child showModal={this.state.showModal} onButtonClick={this.handleButtonClick} />
           {this.state.showModal && (
             <div className="modal">
               <div className="modal-content">
-                <h3>Model Content</h3>
+                <h3>Modal Content</h3>
                 <p>This is a modal content.</p>
                 <button onClick={() => this.setState({ showModal: false })}>Close Modal</button>
               </div>
